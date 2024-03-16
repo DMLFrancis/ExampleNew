@@ -42,4 +42,4 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no ubuntu@ec2-13-50-252-101.eu-north-1.compute.amazonaws.com "rm -rf ~/ExampleApplication/;git clone https://github.com/DMLFrancis/ExampleNew.git; source ExampleNew/deploy.sh"
+          command: ssh -o StrictHostKeyChecking=no ubuntu@ec2-13-50-252-101.eu-north-1.compute.amazonaws.com "rm -rf ~/ExampleNew/;git clone https://github.com/DMLFrancis/ExampleNew.git; source ExampleNew/deploy.sh"
